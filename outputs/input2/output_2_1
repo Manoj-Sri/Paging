@@ -1,0 +1,329 @@
+Memory Size : 2000
+Page Size(1: 100, 2: 200, 3: 400) : 1
+Input file : input2
+t = 0: 
+	process 1   arrives
+	Input Queue : [ 1  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	process 2   arrives
+	Input Queue : [ 1 2  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	process 3   arrives
+	Input Queue : [ 1 2 3  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	process 4   arrives
+	Input Queue : [ 1 2 3 4  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	process 5   arrives
+	Input Queue : [ 1 2 3 4 5  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	process 6   arrives
+	Input Queue : [ 1 2 3 4 5 6  ]
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+	MM moeves process  1 to memory 
+	Input Queue : [ 2 3 4 5 6  ]
+	Memory Map : 
+		0-99 :  Process 1, page 1
+		100-199 :  Process 1, page 2
+		200-299 :  Process 1, page 3
+		300-399 :  Process 1, page 4
+		400-1999 :  Free Frame(s)
+	MM moeves process  3 to memory 
+	Input Queue : [ 2 4 5 6  ]
+	Memory Map : 
+		0-99 :  Process 1, page 1
+		100-199 :  Process 1, page 2
+		200-299 :  Process 1, page 3
+		300-399 :  Process 1, page 4
+		400-499 :  Process 3, page 1
+		500-599 :  Process 3, page 2
+		600-699 :  Process 3, page 3
+		700-1999 :  Free Frame(s)
+	MM moeves process  5 to memory 
+	Input Queue : [ 2 4 6  ]
+	Memory Map : 
+		0-99 :  Process 1, page 1
+		100-199 :  Process 1, page 2
+		200-299 :  Process 1, page 3
+		300-399 :  Process 1, page 4
+		400-499 :  Process 3, page 1
+		500-599 :  Process 3, page 2
+		600-699 :  Process 3, page 3
+		700-799 :  Process 5, page 1
+		800-899 :  Process 5, page 2
+		900-999 :  Process 5, page 3
+		1000-1099 :  Process 5, page 4
+		1100-1199 :  Process 5, page 5
+		1200-1999 :  Free Frame(s)
+	MM moeves process  6 to memory 
+	Input Queue : [ 2 4  ]
+	Memory Map : 
+		0-99 :  Process 1, page 1
+		100-199 :  Process 1, page 2
+		200-299 :  Process 1, page 3
+		300-399 :  Process 1, page 4
+		400-499 :  Process 3, page 1
+		500-599 :  Process 3, page 2
+		600-699 :  Process 3, page 3
+		700-799 :  Process 5, page 1
+		800-899 :  Process 5, page 2
+		900-999 :  Process 5, page 3
+		1000-1099 :  Process 5, page 4
+		1100-1199 :  Process 5, page 5
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1999 :  Free Frame(s)
+	MM moeves process  6 to memory 
+	Input Queue : [ 2  ]
+	Memory Map : 
+		0-99 :  Process 1, page 1
+		100-199 :  Process 1, page 2
+		200-299 :  Process 1, page 3
+		300-399 :  Process 1, page 4
+		400-499 :  Process 3, page 1
+		500-599 :  Process 3, page 2
+		600-699 :  Process 3, page 3
+		700-799 :  Process 5, page 1
+		800-899 :  Process 5, page 2
+		900-999 :  Process 5, page 3
+		1000-1099 :  Process 5, page 4
+		1100-1199 :  Process 5, page 5
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+t = 200: 
+	process 1 completes
+	Memory Map : 
+		0-399 :  Free frame(s)
+		400-499 :  Process 3, page 1
+		500-599 :  Process 3, page 2
+		600-699 :  Process 3, page 3
+		700-799 :  Process 5, page 1
+		800-899 :  Process 5, page 2
+		900-999 :  Process 5, page 3
+		1000-1099 :  Process 5, page 4
+		1100-1199 :  Process 5, page 5
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+	process 3 completes
+	Memory Map : 
+		0-699 :  Free frame(s)
+		700-799 :  Process 5, page 1
+		800-899 :  Process 5, page 2
+		900-999 :  Process 5, page 3
+		1000-1099 :  Process 5, page 4
+		1100-1199 :  Process 5, page 5
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+	process 5 completes
+	Memory Map : 
+		0-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+	MM moeves process  2 to memory 
+	Input Queue : [  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+t = 500: 
+	process 7   arrives
+	Input Queue : [ 7  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+	MM moeves process  7 to memory 
+	Input Queue : [  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 7, page 1
+		300-399 :  Process 7, page 2
+		400-499 :  Process 7, page 3
+		500-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+t = 600: 
+	process 8   arrives
+	Input Queue : [ 8  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 7, page 1
+		300-399 :  Process 7, page 2
+		400-499 :  Process 7, page 3
+		500-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+	MM moeves process  8 to memory 
+	Input Queue : [  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 7, page 1
+		300-399 :  Process 7, page 2
+		400-499 :  Process 7, page 3
+		500-599 :  Process 8, page 1
+		600-699 :  Process 8, page 2
+		700-799 :  Process 8, page 3
+		800-899 :  Process 8, page 4
+		900-999 :  Process 8, page 5
+		1000-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+t = 700: 
+	process 9   arrives
+	Input Queue : [ 9  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 7, page 1
+		300-399 :  Process 7, page 2
+		400-499 :  Process 7, page 3
+		500-599 :  Process 8, page 1
+		600-699 :  Process 8, page 2
+		700-799 :  Process 8, page 3
+		800-899 :  Process 8, page 4
+		900-999 :  Process 8, page 5
+		1000-1199 :  Free frame(s)
+		1200-1299 :  Process 6, page 1
+		1300-1399 :  Process 6, page 2
+		1400-1499 :  Process 6, page 3
+		1500-1599 :  Process 6, page 4
+		1600-1699 :  Process 6, page 1
+		1700-1799 :  Process 6, page 2
+		1800-1899 :  Process 6, page 3
+		1900-1999 :  Process 6, page 4
+t = 2000: 
+	process 6 completes
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 7, page 1
+		300-399 :  Process 7, page 2
+		400-499 :  Process 7, page 3
+		500-599 :  Process 8, page 1
+		600-699 :  Process 8, page 2
+		700-799 :  Process 8, page 3
+		800-899 :  Process 8, page 4
+		900-999 :  Process 8, page 5
+		1000-1999 :  Free Frame(s)
+	process 7 completes
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-499 :  Free frame(s)
+		500-599 :  Process 8, page 1
+		600-699 :  Process 8, page 2
+		700-799 :  Process 8, page 3
+		800-899 :  Process 8, page 4
+		900-999 :  Process 8, page 5
+		1000-1999 :  Free Frame(s)
+	MM moeves process  9 to memory 
+	Input Queue : [  ]
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 9, page 1
+		300-399 :  Process 9, page 2
+		400-499 :  Process 9, page 3
+		500-599 :  Process 8, page 1
+		600-699 :  Process 8, page 2
+		700-799 :  Process 8, page 3
+		800-899 :  Process 8, page 4
+		900-999 :  Process 8, page 5
+		1000-1099 :  Process 9, page 4
+		1100-1999 :  Free Frame(s)
+t = 2100: 
+	process 8 completes
+	Memory Map : 
+		0-99 :  Process 2, page 1
+		100-199 :  Process 2, page 2
+		200-299 :  Process 9, page 1
+		300-399 :  Process 9, page 2
+		400-499 :  Process 9, page 3
+		500-999 :  Free frame(s)
+		1000-1099 :  Process 9, page 4
+		1100-1999 :  Free Frame(s)
+t = 2200: 
+	process 2 completes
+	Memory Map : 
+		0-199 :  Free frame(s)
+		200-299 :  Process 9, page 1
+		300-399 :  Process 9, page 2
+		400-499 :  Process 9, page 3
+		500-999 :  Free frame(s)
+		1000-1099 :  Process 9, page 4
+		1100-1999 :  Free Frame(s)
+t = 2500: 
+	process 9 completes
+	Memory Map : 
+		0-1999 :  Free Frame(s)
+Average turn around time : 1066.56
+
